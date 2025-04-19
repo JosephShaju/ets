@@ -4,7 +4,6 @@ import CreateTicketForm from "@/components/CreateTicketForm"; // Import the tick
 export default function GenerateTicketsPage() {
   return (
     <div>
-      <h1>Generate Tickets</h1>
       {/* No need to pass a static eventId */}
       <CreateTicketForm />
     </div>
