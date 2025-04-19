@@ -1,0 +1,80 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Event {
+  id       Int         @id @default(autoincrement())
+  name     String
+  date     DateTime
+  location String
+  tickets  Ticket[]
+  tiers    TicketTier[]
+}
+
+model TicketTier {
+  id       Int       @id @default(autoincrement())
+  name     String    // e.g. "General Admission", "VIP"
+  price    Float
+  event    Event     @relation(fields: [eventId], references: [id])
+  eventId  Int
+  tickets  Ticket[]
+}
+
+model Ticket {
+  id           Int          @id @default(autoincrement())
+  ticketCode   String       @default(cuid()) @unique // unique code for each ticket
+  event        Event        @relation(fields: [eventId], references: [id])
+  eventId      Int
+  email        String       // attendee’s email
+  fullName     String       // firstName + lastName
+  tier         TicketTier?  @relation(fields: [tierId], references: [id])
+  tierId       Int?         // nullable: issuing without a tier allowed
+  pricePaid    Float        // the price charged (from tier.price)
+  qrCodeUrl    String
+  checkedIn    Boolean      @default(false)
+}
+
+model User {
+  id        Int       @id @default(autoincrement())
+  username  String    @unique
+  email     String?   @unique
+  firstName String?
+  lastName  String?
+  password  String
+  role      Role      // organizer, staff, or attendee
+  sessions  Session[]
+  accounts  Account[]
+}
+
+enum Role {
+  organizer
+  staff
+  attendee
+}
+
+model Session {
+  id      String   @id @default(cuid())
+  userId  Int
+  expires DateTime
+  user    User     @relation(fields: [userId], references: [id])
+}
+
+model Account {
+  id                Int     @id @default(autoincrement())
+  provider          String
+  providerAccountId String
+  userId            Int
+  user              User    @relation(fields: [userId], references: [id])
+}
+
+model VerificationToken {
+  id         String   @id @default(cuid())
+  identifier String
+  token      String
+  expires    DateTime
+}
