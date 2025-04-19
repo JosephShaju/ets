@@ -12,7 +12,7 @@
 
 Small to mid-sized event organizers often need an efficient system to manage ticket sales and check-ins.
 The existing solutions are expensive and have alot of overhead.
-We have created an Event Management System where events can be created, tickets can be purchased, scanned and the staff/ogranizer can keep track of all tickets checked-in.
+We have created an Event Management System where events can be created, tickets can be purchased, scanned and the staff/organizer can keep track of all tickets checked-in.
 
 ### Why This Project?
 
@@ -45,8 +45,8 @@ List the key objectives you set out to achieve:
 
    Since the management system will be operated a single organizer, one default user was created with account:
 
-   **Username: Organizer**
-   **Password: organizer123**
+   **Username:** `Organizer`
+   **Password:** `organizer123`
 
    Staff user does not have a default user account but has the ability to register for a new account.
    The Attendee user does not need any login credentials.
@@ -140,7 +140,7 @@ List the key objectives you set out to achieve:
 1. **Home (Splash)**: View intro, auto-transition to role page.
    ![Application Start Page](assets/StartPage.png)
 2. **Role Selection**: Pick Attendee/Staff/Organizer.
-   ![Landing Page](assets/Landing.png)
+   ![Landing Page](assets/LandingPage.png)
 
    - Now select the desire role from the drop down
      ![Role Selection Dropdown](assets/RoleSelection.png)
@@ -152,13 +152,13 @@ List the key objectives you set out to achieve:
      - Use default Organizer account, _Username:_ Organizer and _Password:_ organizer123
        ![Organizer Login Page](assets/OrganizerLogin.png)
 
-   - Staff\_: Sign in at `/login?role=...`.  
+   - Staff: Sign in at `/login?role=...`.  
       ![Staff Login Page](assets/StaffLogin.png)
 
      - Staff can self-register at `/register`.
        ![Staff Register Page](assets/StaffRegister.png)
 
-   - Attendee\_: Directly lands on attendee dashboard.
+   - Attendee: Directly lands on attendee dashboard.
 
 4. **Organizer**:
 
