@@ -1,0 +1,20 @@
+# Node dependencies
+/node_modules
+
+# Next.js build output
+/.next
+/out
+
+# Prisma
+/.env               # if you happened to put your DATABASE_URL here
+/.env.*.local
+
+# Logs
+npm-debug.log*
+
+# IDEs and editors
+.vscode/
+
+# build output (if you ever compile to a `build/` or `dist/` folder)
+/build
+/dist
