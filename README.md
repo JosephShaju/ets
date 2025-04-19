@@ -18,8 +18,8 @@ A full-stack Next.js application for managing events and tickets, featuring role
 1. **Clone the repository** (if you're downloading this project skip this)
 
    ```bash
-   git clone <your-repo-url>
-   cd <your-project-directory>
+   git clone https://github.com/JosephShaju/ets.git
+   cd ets
    ```
 
 2. **Install dependencies**
