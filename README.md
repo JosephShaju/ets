@@ -221,10 +221,9 @@ List the key objectives you set out to achieve:
 
 ## Individual Contributions
 
-| Member          | Contributions                                                  |
-| --------------- | -------------------------------------------------------------- |
-| Joseph Thaliath | Auth setup, NextAuth callbacks, seeding,Event API & UI,        |
-|                 | Prisma models,Ticket generation, QR/email, real-time dashboard |
+| Member          | Contributions                                                                                                          |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Joseph Thaliath | Auth setup, NextAuth callbacks, seeding,Event API & UI, Prisma models,Ticket generation, QR/email, real-time dashboard |
 
 ---
 
