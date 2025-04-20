@@ -221,9 +221,9 @@ List the key objectives you set out to achieve:
 
 ## Individual Contributions
 
-| Member          | Contributions                                                                                                          |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Joseph Thaliath | Auth setup, NextAuth callbacks, seeding,Event API & UI, Prisma models,Ticket generation, QR/email, real-time dashboard |
+| Member          | Contributions                                                                                                           |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Joseph Thaliath | Auth setup, NextAuth callbacks, seeding, Event API & UI, Prisma models,Ticket generation, QR/email, real-time dashboard |
 
 ---
 
@@ -238,5 +238,9 @@ Currently this project only allows for one organizer per site as we are using th
 One of the harder challenges in the beginning was to integrate NextAuth with Prisma for user authentication.
 There were issues we encountered as part Server/client component boundaries in Next.js 15.
 Implemented the real time handling of UI updates (checked-in tickets) with SWR which taught me about th eimportance such real-time updates in common web applications.
+
+## Video Demo
+
+https://drive.google.com/file/d/15zjRjPyZ0JJdVoelTN5Fk7W-LfGgQLYZ/view?usp=sharing
 
 ##
