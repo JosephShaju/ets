@@ -229,7 +229,7 @@ List the key objectives you set out to achieve:
 
 ## Future implementations
 
-Currently this project only allows for one organizer per site as we are using the same database schema shared Which means multiple organizers won't yet be able to use this website simultaneously. Due to the complexity of implementing such a system and the lack of enough team members to broaden this scope we ad to shy away from this implementation. BUt in the future iteration of this project we will be adding this feature as well.
+Currently this project only allows for one organizer per site as we are using the same database schema shared Which means multiple organizers won't yet be able to use this website simultaneously. Due to the complexity of implementing such a system and the lack of enough team members to broaden this scope we ad to shy away from this implementation. But in the future iteration of this project we will be adding this feature as well.
 
 ---
 
@@ -237,7 +237,7 @@ Currently this project only allows for one organizer per site as we are using th
 
 One of the harder challenges in the beginning was to integrate NextAuth with Prisma for user authentication.
 There were issues we encountered as part Server/client component boundaries in Next.js 15.
-Implemented the real time handling of UI updates (checked-in tickets) with SWR which taught me about th eimportance such real-time updates in common web applications.
+Implemented the real time handling of UI updates (checked-in tickets) with SWR which taught me about the importance such real-time updates in common web applications.
 
 ## Video Demo
 
