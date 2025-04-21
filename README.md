@@ -80,7 +80,7 @@ List the key objectives you set out to achieve:
 ## Technical Stack
 
 - **Framework**: Next.js (App Router)
-- **Authentication**: NextAuth.js (JWT sessions)
+- **Authentication**: NextAuth.js (JWT sessions) in /pages/api/auth
 - **Database**: PostgreSQL with Prisma ORM
 - **Email**: NodeMailer (SMTP) - Used to send an automated email upon ticket purchase.
 - **QR Codes**: `qrcode` package - used to create the QR code for each ticket.
@@ -118,7 +118,7 @@ List the key objectives you set out to achieve:
 - **App Router**: Pages & layouts under `src/app/`.
 - **Server Components & Actions**: Initialization (`createOrganizer()` initilizes default Organizer account) in `app/layout.tsx`; Prisma calls in API routes.
   - Leveraged Server Components in src/app/layout.tsx (to seed the organizer) and API routes under src/app/api/\*.
-- **API Routes**: Defined under `src/app/api/*` for `/events`, `/tickets`, and auth.
+- **API Routes**: Defined under `src/app/api/*` for `/events`, `/tickets`, and auth in `/pages/api/auth/`.
 - **Client Components**: Interactive forms/dashboard marked with `"use client"`.
 
 ---
